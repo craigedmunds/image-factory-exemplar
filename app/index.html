@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Factory Exemplar</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 { color: #2c3e50; }
+        .info { background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 20px 0; }
+        code { background: #e9ecef; padding: 2px 6px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <h1>🏭 Image Factory Exemplar</h1>
+    <p>This is a minimal example application demonstrating the Image Factory system.</p>
+    
+    <div class="info">
+        <h2>About This Application</h2>
+        <p>This simple nginx-based application is built and promoted through the Image Factory pipeline using:</p>
+        <ul>
+            <li><strong>Kargo</strong> - Orchestrates the build and promotion workflow</li>
+            <li><strong>ArgoCD</strong> - Deploys the generated manifests</li>
+            <li><strong>CDK8s</strong> - Generates Kubernetes resources from configuration</li>
+        </ul>
+    </div>
+
+    <div class="info">
+        <h2>Image Details</h2>
+        <p><strong>Base Image:</strong> <code>nginx:alpine</code></p>
+        <p><strong>Repository:</strong> <code>craigedmunds/image-factory-exemplar</code></p>
+        <p><strong>Build Trigger:</strong> GitHub Actions workflow</p>
+    </div>
+
+    <p><em>If you're seeing this page, the Image Factory successfully built and deployed this application! 🎉</em></p>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# Image Factory submodule (symlink during local development)
+image-factory/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,0 +1,14 @@
+# Image Factory Exemplar - Image Registry
+# Simple example using public nginx image
+
+- name: hello-world
+  registry: docker.io
+  repository: library/nginx
+  source:
+    provider: github
+    repo: craigedmunds/image-factory-exemplar
+    branch: main
+    dockerfile: app/Dockerfile
+    workflow: build.yml
+  rebuildDelay: 1d
+  autoRebuild: true
