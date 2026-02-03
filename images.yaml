@@ -1,14 +1,12 @@
 # Image Factory Exemplar - Image Registry
-# Simple example using public nginx image
+# Simple example using a local nginx image
 
 - name: hello-world
-  registry: docker.io
-  repository: library/nginx
+  registry: ghcr.io
+  repository: craigedmunds/hello-world
   source:
-    provider: github
-    repo: craigedmunds/image-factory-exemplar
-    branch: main
-    dockerfile: app/Dockerfile
-    workflow: build.yml
+    # For local development, this points to a local Dockerfile
+    # In production, this would be a real GitHub repo
+    dockerfile: example-images/hello-world/Dockerfile
   rebuildDelay: 1d
   autoRebuild: true
