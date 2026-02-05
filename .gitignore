@@ -1,8 +1,13 @@
 # Image Factory submodule (symlink during local development)
 image-factory/
 
+# Image Factory cache (cloned repos)
+.image-factory-cache/
+
 # Editor files
 .vscode/
 .idea/
 *.swp
 *.swo
+
+.image-factory-cache
